@@ -1,0 +1,13 @@
+
+(1) 本地启动环境配置
+   1. NamesrvStartup 配置
+     - 环境变量：ROCKETMQ_HOME=D:\\Project\\wxw2020\\source-rocketmq\\rocketmq-home
+   2. BrokerStartup 配置
+     - 系统参数配置：-c D:\\Project\\wxw2020\\source-rocketmq\\rocketmq-home\\conf\\broker.conf
+     - 环境变量配置: ROCKETMQ_HOME=D:\\Project\\wxw2020\\source-rocketmq\\rocketmq-home
+   3. 配置并启动 consumer
+     - consumer.setNamesrvAddr("127.0.0.1:9876");
+   4. 配置并启动 producer
+     - producer.setNamesrvAddr("127.0.0.1:9876");
+
+  - 详细文章：https://blog.csdn.net/qq_41893274/article/details/112506613

@@ -18,7 +18,7 @@
 
 <configuration>
     <!-- 自定义配置，目录需要改成自己的rocketmq_home -->
-    <property name="user.home" value="D:\\Project\\wxw2020\\wxw-source\\source-rocketmq\\rocketmq-home"/>
+    <property name="user.home" value="D:\\Project\\wxw2020\\source-rocketmq\\rocketmq-home"/>
     <appender name="DefaultAppender"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${user.home}/logs/rocketmqlogs/broker_default.log</file>
